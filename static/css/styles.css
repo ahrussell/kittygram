@@ -2,6 +2,16 @@ ul{
 list-style-type: none;
 }
 
+header{
+	margin-top: 0;
+	padding: 0;
+}
+
+.newsimg{
+	padding: 10px;
+	width: 700px;
+}
+
 #grump{
 	margin-left: 50px;
 	border-radius: 15px;
@@ -42,6 +52,10 @@ list-style-type: none;
 
 
 #topbar{
+	position: fixed;
+	margin-top: -120px;
+	z-index: 100;
+	width: 100%;
 	background-color: #336699;
 }
 
@@ -54,8 +68,8 @@ list-style-type: none;
 	font-size: 45px;
 }
 
-#main {
-    margin-top: 20px;
+#push {
+    margin-top: 120px;
 }
 
 #new{
@@ -76,7 +90,7 @@ list-style-type: none;
 #post{
 	margin-left: auto;
 	margin-right: auto;
-	padding: 30px;
+	/*padding: 30px;*/
 }
 
 .centered{

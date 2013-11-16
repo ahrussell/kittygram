@@ -14,7 +14,7 @@
 
 {% block body %}
 
-<div class="container" id="main">
+<div class="container" id="push">
 	<div class="row">
 		<div class="col-md-4" id="right">
 			<div class="jumbotron">
@@ -31,7 +31,7 @@
 		<div class="col-md-8" id="left">
 			{% for f in files %}
 			<div class="container" id="post">
-                <img src="{{ f }}" width="700px">
+                <img src="{{ f }}" class="newsimg">
 			</div>
 			{% endfor %}
 		</div>

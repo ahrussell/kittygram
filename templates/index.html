@@ -21,11 +21,11 @@
   <body>
 
 
-  <div  id="topbar">
+  <div id="topbar">
     <div class="container">
       <div class="header">
       {% block special %}
-      
+
       {% endblock %}
 
         <a href="{{ url_for('index') }}"><img src="{{ url_for("static", filename="img/KittyGramLogoThinner.png") }}" height="100px"></a>
@@ -38,11 +38,8 @@
 
   {% block body%}
 
-
-
-        <div class="container" id="main">
-
-          <div class="row">
+    <div class="container" id="push">
+     <div class="row">
           	<div class="col-md-4">
           		<img src="{{ url_for("static", filename="img/KittyGram-Logo.png") }}" height="350px">
           	</div>
@@ -52,24 +49,23 @@
         <p>Are you tired of seeing pictures of food and shit on the internet? Well fear no more, because you've found Kittygram. We allow only the finest cat pictures for your viewing pleasure.</p>
         
 
-<form class="form-inline" role="form">
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputEmail2">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-  </div>
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputPassword2">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
-  </div>
-</form>
+			<form class="form-inline" role="form">
+			  <div class="form-group">
+			    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+			    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+			  </div>
+			  <div class="form-group">
+			    <label class="sr-only" for="exampleInputPassword2">Password</label>
+			    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+			  </div>
+			</form>
 
-<p id="main"><a href="{{ url_for('news') }}" class="btn btn-primary btn-large">Login &raquo;</a></p>
+			<p style="margin-top: 15px"><a href="{{ url_for('news') }}" class="btn btn-primary btn-large">Login &raquo;</a></p>
 
           	</div>
 
-          </div>
-
-          </div>
+      </div>
+      </div>
 
 {% endblock %}
 
