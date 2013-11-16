@@ -2,6 +2,11 @@ ul{
 list-style-type: none;
 }
 
+header{
+	margin-top: 0;
+	padding: 0;
+}
+
 #grump{
 	margin-left: 50px;
 	border-radius: 15px;
@@ -42,6 +47,9 @@ list-style-type: none;
 
 
 #topbar{
+/*	position: fixed;
+	z-index: 100;*/
+	width: 100%;
 	background-color: #336699;
 }
 
@@ -54,7 +62,7 @@ list-style-type: none;
 	font-size: 45px;
 }
 
-#main {
+#push {
     margin-top: 20px;
 }
 
