@@ -1,5 +1,17 @@
 {% extends "index.html" %}
 
+
+      {% block special %}
+        <ul class="nav-pills pull-right">
+          <li id="upbutton">
+          <a href="{{ url_for('upload') }}"><img src="{{ url_for("static", filename="img/upload-button.png") }}" height="85px"></a>
+          </li>
+
+          <li id="kittycam"> <img src="{{ url_for("static", filename="img/KittyGram-Logo.png") }}" height="90px"></li>
+
+        </ul>
+      {% endblock %}
+
 {% block body %}
 
 <div class="container" id="main">
@@ -7,8 +19,12 @@
 		<div class="col-md-4" id="right">
 			<div class="jumbotron">
 				<h2>Archer Wheeler</h2>
+
 				<img src="{{ url_for("static", filename="img/sophiscatedcat.PNG") }} " height="170px" id="profpic">
-			 	<p>I... I just... I just really like cats</p>
+				<h3>Lives Left: 9</h3>
+
+			 	<!-- <p id="proftext">I... I just... I just really like cats</p> -->
+			 	
 			</div>
 		</div>
 
