@@ -26,6 +26,7 @@ def index():
 def news():
     files = glob.glob("static/uploads/*")
 
+    files.remove("static/uploads/rejects")
     files = sorted(files, key= lambda f: os.path.getmtime(f))
 
     if files is not None:
