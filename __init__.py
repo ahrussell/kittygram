@@ -4,8 +4,6 @@ import random
 import json
 import uuid
 
-import src
-
 app = Flask(__name__)
 
 @app.route('/')
