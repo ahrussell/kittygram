@@ -21,7 +21,6 @@ def index():
 @app.route('/newsfeed')
 def news():
     files = glob.glob("static/uploads/*")
-
     if files is not None:
         files.reverse()
     return render_template("newfeed.html", page_name="NewsFeed", files=files)
