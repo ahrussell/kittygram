@@ -21,7 +21,6 @@ def index():
 @app.route('/newsfeed')
 def news():
     files = glob.glob("static/uploads/*")
-
     files = sorted(files, key= lambda f: os.path.getmtime(f))
 
     if files is not None:
