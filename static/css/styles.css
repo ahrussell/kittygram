@@ -1,4 +1,7 @@
-
+ul{
+list-style-type: none;
+padding-right: .6em;
+}
 
 #wrapper{
     width: 925px;
@@ -13,6 +16,10 @@
 	min-height: 300px;
 	/*background-color: black;*/
 	background-image: url("../img/brushed.png");
+}
+
+#upbutton{
+	height: 50px;
 }
 
 #topbar{

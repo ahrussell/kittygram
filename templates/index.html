@@ -21,8 +21,11 @@
   <div  id="topbar">
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="{{ url_for('upload') }}">Upload</a></li>
+        <ul class="nav-pills pull-right">
+          <li>
+          <a href="{{ url_for('upload') }}"><img src="{{ url_for("static", filename="img/upload-button.png") }}" height="50px"></a>
+          </li>
+
           <li> <img src="{{ url_for("static", filename="img/KittyGram-Logo.png") }}" height="90px"></li>
 
         </ul>
