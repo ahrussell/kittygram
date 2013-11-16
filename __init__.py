@@ -36,9 +36,9 @@ def news():
 def upload():
     return render_template("upload.html", page_name="upload")
 
-@app.route('/login')
-def login():
-    return render_template("about.html", page_name="about")
+@app.route('/not_cat')
+def not_cat(f):
+    return render_template("not_cat.html", filename=f)
 
 @app.route('/upload_image', methods=["post","get"])
 def upload_image():
@@ -53,8 +53,9 @@ def upload_image():
 
         if not is_cat(filename):
             os.remove(app.config['UPLOAD_FOLDER']+"/"+filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER']+"/rejects", filename))
             
-            return redirect(url_for('index'))
+            return redirect(url_for('not_cat', f=app.config['UPLOAD_FOLDER']+"/rejects"+"/"+filename))
 
         return redirect(url_for('news'))
 
