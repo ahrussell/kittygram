@@ -1,8 +1,4 @@
-#main {
-    background-color: #dfdfdf;
-    min-height: 500px;
-    margin: 0px;
-}
+
 
 #wrapper{
     width: 925px;
@@ -11,4 +7,24 @@
     margin-right: 0px;
     top: 500px;
     left: 0px;
+
+#left{
+	min-height: 300px;
+	/*background-color: black;*/
+	background-image: url("../img/geometry.png");
+}
+
+#main {
+    height: 5%;
+    width: 5%;
+}
+
+#new{
+	height:50px;
+	width:auto;
+}
+
+#logo{
+	width:50px;
+	
 }
