@@ -3,15 +3,37 @@
 <head>
 <meta charset=utf-8>
 <meta name="viewport" content="width=620">
-<title>HTML5 Demo: File API</title>
-<link rel="stylesheet" href="css/html5demos.css">
-<script src="js/h5utils.js"></script></head>
+<title>KittyGram</title>
+<script src="js/h5utils.js"></script>
+<!-- Our stuff -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="bootstrap/css/bootstrap.min.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="css/styles.css") }}">
+
+    <link rel="icon" type="image/png" href="{{ url_for("static", filename="img/KittyGram-Logo.png") }}">
+<!-- not our stuff -->
+
+</head>
 <body>
+
+<!-- Dragon be not here -->
+  <div  id="topbar">
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Upload</a></li>
+          <li> <img src="{{ url_for("static", filename="img/KittyGram-Logo.png") }}" height="90px"></li>
+
+        </ul>
+        <img src="{{ url_for("static", filename="img/KittyGramLogoThinner.png") }}" height="100px">
+      </div>
+    </div>    
+  </div>
+<!-- Here be dragons!! -->
+
 <section id="wrapper">
 <div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/14060/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
-    <header>
-      <img src="{{ url_for("static", filename="img/KittyGramLogoThinner.png") }}" height="100px">
-    </header>
+
+
 
 <style>
 #holder { border: 10px solid #ccc; width: 400px; height: 400px; margin: 20px auto;}
