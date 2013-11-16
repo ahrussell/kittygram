@@ -22,6 +22,8 @@ def index():
 def news():
     files = glob.glob("static/uploads/*")
 
+    files = sorted(files, key= lambda f: os.path.getmtime(f))
+
     if files is not None:
         files.reverse()
     return render_template("newfeed.html", page_name="NewsFeed", files=files)
@@ -40,8 +42,11 @@ def upload_image():
     if file and allowed_file(file.filename):
         # check if cat
 
+        num_files = len([name for name in os.listdir('static/uploads/')])
+        print num_files
+
         filename = secure_filename(file.filename)
-        file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        file.save(os.path.join(app.config['UPLOAD_FOLDER'], str(uuid.uuid4())+filename[-4:]))
         return redirect(url_for('news'))
 
 def allowed_file(filename):
