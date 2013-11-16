@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=620">
+
+<title>HTML5 Demo: File API</title>
+<body>
+
+
+<title>KittyGram</title>
+<!-- Our stuff -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="bootstrap/css/bootstrap.min.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="css/styles.css") }}">
+
+    <link rel="icon" type="image/png" href="{{ url_for("static", filename="img/KittyGram-Logo.png") }}">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<!-- not our stuff -->
+
+</head>
+<body>
+
+
+<!-- Dragon be not here -->
+  <div  id="topbar">
+    <div class="container">
+      <div class="header">
+        <ul class="nav-pills pull-right">
+          <li id="upbutton">
+          <a href="{{ url_for('upload') }}"><img src="{{ url_for("static", filename="img/upload-button.png") }}" height="85px"></a>
+          </li>
+
+          <li id="kittycam"> <img src="{{ url_for("static", filename="img/KittyGram-Logo.png") }}" height="90px"></li>
+
+        </ul>
+        <img src="{{ url_for("static", filename="img/KittyGramLogoThinner.png") }}" height="100px">
+      </div>
+    </div>    
+  </div>
+<!-- Here be dragons!! -->
+
+
+<form action="{{ url_for('upload_image') }}" method="post"
+enctype="multipart/form-data">
+<label for="file">Filename:</label>
+<input type="file" name="file" id="file"><br>
+<input type="submit" name="submit" value="Submit">
+
+
+<!-- <section id="wrapper"> -->
+<!-- <style> -->
+<!-- #holder { border: 10px solid #ccc; width: 400px; height: 400px; margin: 20px auto;} -->
+<!-- #holder.hover { border: solid 10px #333; } -->
+<!-- </style> -->
+<!-- <article> -->
+<!--   <div id="holder"></div>  -->
+<!--   <p id="status"></p> -->
+<!-- </article> -->
+<!-- <script> -->
+<!-- var holder = $('#holder'), -->
+<!--     state = $('#status'); -->
+<!--  -->
+<!-- if (typeof window.FileReader === 'undefined') { -->
+<!--   state.className = 'fail'; -->
+<!-- } else { -->
+<!--   state.className = 'success'; -->
+<!-- } -->
+<!--   -->
+<!-- holder.ondragover = function () { this.className = 'hover'; return false; }; -->
+<!-- holder.ondragend = function () { this.className = ''; return false; }; -->
+<!-- holder.ondrop = function (e) { -->
+<!--   this.className = ''; -->
+<!--   e.preventDefault(); -->
+<!--  -->
+<!--   var file = e.dataTransfer.files[0], -->
+<!--       reader = new FileReader(); -->
+<!--   reader.onload = uploadFile; -->
+<!--   console.log(file); -->
+<!--   reader.readAsDataURL(file); -->
+<!--  -->
+<!--   return false; -->
+<!-- }; -->
+<!--  -->
+<!-- function uploadFile(event) { -->
+<!--     state.html("555");   -->
+<!--     var result = event.target.result; -->
+<!--     $.post('/upload_image', { data: result}, function (d) { console.log(d); }); -->
+<!-- }</script> -->
+
+</body>
+</html>

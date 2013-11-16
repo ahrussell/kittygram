@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+
+{% block body %}
+
+<div class="container" id="main">
+	<div class="row">
+		<div class="col-md-4" id="right">
+			<div class="jumbotron">
+				<h2>Archer Wheeler</h2>
+				<img src="{{ url_for("static", filename="img/sophiscatedcat.PNG") }} " height="170px" id="profpic">
+			 	<p>I, I just, I just really like cats</p>
+			</div>
+		</div>
+
+		<div class="col-md-8" id="left">
+			{% for f in files %}
+			<div class="container" id="post">
+                <img src="{{ f }}" width="700px">
+				<p>This is a cat. I loooove it so much</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+
+
+</div>
+
+
+
+{% endblock %}
