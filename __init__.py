@@ -11,6 +11,10 @@ def index():
 
     return render_template("index.html")
 
+@app.route('/newsfeed')
+def news():
+    return render_template("newfeed.html", page_name="NewsFeed")
+
 @app.route('/upload')
 def about():
     return render_template("about.html", page_name="about")
