@@ -13,9 +13,9 @@
 		</div>
 
 		<div class="col-md-8" id="left">
-			{% for i in range(5) %}
+			{% for f in files %}
 			<div class="container" id="post">
-				<img src="http://placekitten.com/400/300" width="700px">
+                <img src="{{ f }}" width="700px">
 				<p>This is a cat. I loooove it so much</p>
 			</div>
 			{% endfor %}
