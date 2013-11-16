@@ -16,8 +16,8 @@ def news():
     return render_template("newfeed.html", page_name="NewsFeed")
 
 @app.route('/upload')
-def about():
-    return render_template("upload.html", page_name="about")
+def upload():
+    return render_template("upload.html", page_name="upload")
 
 @app.route('/login')
 def resume():
