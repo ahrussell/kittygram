@@ -1,3 +1,13 @@
+
+
+#wrapper{
+    width: 925px;
+    height: 1355px;
+    margin-left: 0px;
+    margin-right: 0px;
+    top: 500px;
+    left: 0px;
+}
 #left{
 	border-radius: 5px;
 	min-height: 300px;
@@ -20,6 +30,15 @@
 
 #main {
     margin-top: 20px;
+}
+
+#new{
+	height:50px;
+	width:auto;
+}
+
+#logo{
+	width:50px;
 }
 
 #center{
