@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=620">
+<title>HTML5 Demo: File API</title>
+<link rel="stylesheet" href="css/html5demos.css">
+<script src="js/h5utils.js"></script></head>
+<body>
+<section id="wrapper">
+<div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/14060/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
+    <header>
+      <img src="{{ url_for("static", filename="img/KittyGramLogoThinner.png") }}" height="100px">
+    </header>
+
+<style>
+#holder { border: 10px solid #ccc; width: 400px; height: 400px; margin: 20px auto;}
+#holder.hover { border: solid 10px #333; }
+</style>
+<article>
+  <div id="holder"></div> 
+  <p id="status"></p>
+</article>
+<script>
+var holder = document.getElementById('holder'),
+    state = document.getElementById('status');
+
+if (typeof window.FileReader === 'undefined') {
+  state.className = 'fail';
+} else {
+  state.className = 'success';
+}
+ 
+holder.ondragover = function () { this.className = 'hover'; return false; };
+holder.ondragend = function () { this.className = ''; return false; };
+holder.ondrop = function (e) {
+  this.className = '';
+  e.preventDefault();
+
+  var file = e.dataTransfer.files[0],
+      reader = new FileReader();
+  reader.onload = function (event) {
+    console.log(event.target);
+    holder.style.background = 'url(' + event.target.result + ') no-repeat center';
+  };
+  console.log(file);
+  reader.readAsDataURL(file);
+
+  return false;
+};
+</script>
+
+
+<script>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script>
+try {
+var pageTracker = _gat._getTracker("UA-1656750-18");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
