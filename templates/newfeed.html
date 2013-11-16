@@ -6,14 +6,17 @@
 	<div class="row">
 		<div class="col-md-4" id="right">
 			<div class="jumbotron">
-
-			  <p>...</p>
-			  <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+				<h3>Welcome Archer</h3>
+			 	<p>I, I just, I just really like cats</p>
 			</div>
 		</div>
 
 		<div class="col-md-8" id="left">
-			hahha
+			{% for i in range(5) %}
+			<div class="container">
+				<img src="http://placekitten.com/300/300" >
+			</div>
+			{% endfor %}
 		</div>
 	</div>
 
