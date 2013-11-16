@@ -1,0 +1,14 @@
+#main {
+    background-color: #dfdfdf;
+    min-height: 500px;
+    margin: 0px;
+}
+
+#wrapper{
+    width: 925px;
+    height: 1355px;
+    margin-left: 0px;
+    margin-right: 0px;
+    top: 500px;
+    left: 0px;
+}

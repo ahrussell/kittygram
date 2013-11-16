@@ -17,9 +17,12 @@
   <body>
   {% block body%}
 
-	<div class="jumbotron" id="">
+	<div class="jumbotron" id="main" >
+		
+    <div id="wrapper">
+	  <img src="{{ url_for("static", filename="img/KittyGram-Logo.png") }}">
+    </div>
 
-	  <h1>Hello, world!</h1>
 	  <p>...</p>
 	  <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
 	</div>
