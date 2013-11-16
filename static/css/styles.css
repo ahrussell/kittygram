@@ -14,7 +14,13 @@
 	background-image: url("../img/geometry.png");
 }
 
+.header{
+/*	max-height: 300px;
+	background-color: black;*/
+}
+
 #main {
+<<<<<<< HEAD
     height: 5%;
     width: 5%;
 }
@@ -27,4 +33,28 @@
 #logo{
 	width:50px;
 	
+=======
+    margin-top: 50px;
+}
+
+#center{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+#post{
+	float: none;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.centered{
+    float: none;
+    margin: 0 auto;
+}
+
+#pic{
+	width: 200px;
+>>>>>>> d9ee5c22dbb5912bd7842bc67ba12d30e4122d4c
 }
