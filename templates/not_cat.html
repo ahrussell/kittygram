@@ -1,1 +1,33 @@
-aasdf
+{% extends "index.html" %}
+
+
+      {% block special %}
+        <ul class="nav-pills pull-right">
+          <li id="upbutton">
+          <a href="{{ url_for('upload') }}"><img src="{{ url_for("static", filename="img/upload-button.png") }}" height="85px"></a>
+          </li>
+
+          <li id="kittycam"> <img src="{{ url_for("static", filename="img/KittyGram-Logo.png") }}" height="90px"></li>
+
+        </ul>
+      {% endblock %}
+
+{% block body %}
+
+
+
+<div onload='higlightRow("blah")' class="container" id="push">
+	<img src={{ f }} id="bad">
+	<div class="flash" id="blah">ERROR 404 CAT NOT FOUND</div>
+</div>
+
+<script type="text/javascript">
+setInterval( function () {
+$("#blah").animate({opacity:0},200,"linear",function(){
+  $(this).animate({opacity:1},200);
+});  }, 200);
+</script>
+
+
+
+{% endblock %}

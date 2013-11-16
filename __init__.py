@@ -6,10 +6,10 @@ import uuid
 from werkzeug import secure_filename
 import glob
 import os
-from SimpleCV import *
-from sklearn.svm import LinearSVC
-from sklearn.linear_model import LogisticRegression
-import numpy as np
+# from SimpleCV import *
+# from sklearn.svm import LinearSVC
+# from sklearn.linear_model import LogisticRegression
+# import numpy as np
 
 UPLOAD_FOLDER = 'static/uploads'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
@@ -39,7 +39,7 @@ def upload():
 
 @app.route('/not_cat')
 def not_cat(f):
-    return render_template("not_cat.html", filename=f)
+    return render_template("not_cat.html", f = f)
 
 @app.route('/upload_image', methods=["post","get"])
 def upload_image():
