@@ -1,16 +1,25 @@
 #left{
+	border-radius: 5px;
 	min-height: 300px;
 	/*background-color: black;*/
-	background-image: url("../img/geometry.png");
+	background-image: url("../img/brushed.png");
+}
+
+#topbar{
+	background-color: #336699;
+}
+
+.li{
+	margin: 30px;
 }
 
 .header{
-/*	max-height: 300px;
-	background-color: black;*/
+	margin-top: 5px;
+	font-size: 45px;
 }
 
 #main {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #center{
