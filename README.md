@@ -1,5 +1,6 @@
 kittygram
 =======
+<<<<<<< HEAD
 Instagram of the feline variety
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11,3 +12,6 @@ archer was here!
 =======
 >>>>>>> 719aff939d1c2e45cbe10637fd455f60053ebf39
 as
+=======
+Instagram of the feline variety
+>>>>>>> ed8bd157fc0f2939e23ea4c496995f7ebe713a73

@@ -1,18 +1,14 @@
-{% extends "post.html" %}
+<!DOCTYPE html>
 
-{% block page_css %}
-    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="css/blog.css") }}">
-{% endblock %}
+<html>
 
-{% block title %}
-Andrew Russell
-{% endblock %}
+<head>
+    <title>
+        Kittygram
+    </title>
 
-{% block main %}
-        <div class="body">
-            {{ post|safe }}
-            <div class="formatted_date">
-                Posted {{ formatted_date }}
-            </div>
-        </div>    
-{% endblock %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="bootstrap/css/bootstrap.css") }}"></head>
+
+<body>
+    Hi!
+</body>
