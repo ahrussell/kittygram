@@ -24,11 +24,11 @@
     <div class="container">
       <div class="header">
         <ul class="nav-pills pull-right">
-          <li>
-          <a href="{{ url_for('upload') }}"><img src="{{ url_for("static", filename="img/upload-button.png") }}" height="50px"></a>
+          <li id="upbutton">
+          <a href="{{ url_for('upload') }}"><img src="{{ url_for("static", filename="img/upload-button.png") }}" height="85px"></a>
           </li>
 
-          <li> <img src="{{ url_for("static", filename="img/KittyGram-Logo.png") }}" height="90px"></li>
+          <li id="kittycam"> <img src="{{ url_for("static", filename="img/KittyGram-Logo.png") }}" height="90px"></li>
 
         </ul>
         <img src="{{ url_for("static", filename="img/KittyGramLogoThinner.png") }}" height="100px">

@@ -2,6 +2,15 @@ ul{
 list-style-type: none;
 }
 
+#kittycam{
+	margin-left: 30px;
+}
+
+#upbutton{
+	margin-right: 30px;
+	margin-top: 5px;
+}
+
 #wrapper{
     width: 925px;
     height: 1355px;
@@ -17,9 +26,7 @@ list-style-type: none;
 	background-image: url("../img/brushed.png");
 }
 
-#upbutton{
-	height: 50px;
-}
+
 
 #topbar{
 	background-color: #336699;
